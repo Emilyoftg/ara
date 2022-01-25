@@ -5,7 +5,7 @@ I A Telegram Auto Filter Bot.Its Easy To Use Me ):\nJust Add Me To Your Group As
 Here Is The Help For My Commands.</b>"""
     ABOUT_TXT = """
 <b>➥  My Name</b> : <b><i><a href="https://t.me/MC_MovieBot">Mᴏᴠɪᴇ Bᴏᴛ 😎</a></i></b>
-<b>➥  Owner</b> : <b><i><a href="https://t.me/NickxFury">Nɪᴄᴋ Fᴜʀʏ 🇮🇳</a></i></b>
+<b>➥  Owner</b> : <b><i><a href="https://t.me/TomHiiddleston">Tᴏᴍ Hɪᴅᴅʟᴇsᴛᴏɴ</a></i></b>
 <b>➥ Credits</b> : <code>Everyone in this journey</code>
 <b>➥ Data base</b> : <b><a href="https://www.mongodb.com/">MongoDB</a></b>
 <b>➥ Language</b> : <code>Python3</code>
@@ -38,7 +38,7 @@ URL buttons:
 Alert buttons:
 <code>[Button Text](buttonalert:This is an alert message)</code></b>"""
 
-    FILLINGS_TXT = """Help: <b>Fillings</b>
+    FILLINGS_TXT = """Help: <b>Fillings (Beta)</b>
 
 You can also customise the contents of your message with contextual data. For example, you could mention a user by name in the filter message, or mention them in a filter!
 
