@@ -285,7 +285,19 @@ There Is Nothing To Know More. Send Me The Limit Of Your Password.
 • Only Digits Are Allowed
 • Maximum Allowed Digits Till 84 
 (I Can't Generate Passwords Above The Length 84)
-• IMDb should have admin privillage.
+• Bot should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
+
+    SHARE_TXT = """Help: <b>Sharing Text Maker</b>
+
+a bot to create a link to share text in the telegram.
+
+<b>Commands and Usage:</b>
+• /share (text or reply to message)
+
+<b>NOTE:</b>
+• Bot should have admin privillage.
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
 
