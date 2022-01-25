@@ -475,7 +475,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "about":
-        query.data == "about":
         buttons= [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/MCMovieBot'),
             InlineKeyboardButton('🗒️ Disclaimer', callback_data='source')
