@@ -465,7 +465,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('TTS', callback_data='tts'),
             ],[
             InlineKeyboardButton('Tgraph', callback_data='tgraph'),
-            InlineKeyboardButton('Zombies', callback_data='zombies'),
+            InlineKeyboardButton('File Store', callback_data='zombies'),
             InlineKeyboardButton('Back', callback_data='start')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
