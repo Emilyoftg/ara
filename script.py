@@ -38,6 +38,26 @@ URL buttons:
 Alert buttons:
 <code>[Button Text](buttonalert:This is an alert message)</code></b>"""
 
+    FILLINGS_TXT = """Help: <b>Fillings</b>
+
+You can also customise the contents of your message with contextual data. For example, you could mention a user by name in the filter message, or mention them in a filter!
+
+<b>Supported fillings:</b>
+- <code>{first}</code>: The user's first name.
+- <code>{last}</code>: The user's last name.
+- <code>{fullname}</code>: The user's full name.
+- <code{username}</code>: The user's username.
+- <code>{mention}</code>: Mentions the user with their firstname.
+- <code>{id}</code>: The user's ID.
+- <code>{dcid}</code>: The user's DC ID.
+- <code>{chatname}</code>: The chat's name.
+- <code>{query}</code>: Any Message Text.
+
+<b>Example:</b>
+<b>- Save a filter using the mention.</b>
+-> <code>/filter test Hello {mention} This Is your Username : {username} And This Is your ID : {id}.</code>
+"""
+
     AUTOFILTER_TXT = """Help: <b>Auto Filter
 NOTE:
 1. Make me the admin of your channel if it's private.
@@ -92,10 +112,12 @@ Commands and Usage:
 • /id - <code>get id of a specifed user.</code>
 • /info or /whois - <code>get information about a user.</code>
 •/imdb or /search - <code>get the film information from various sources.</code>
-• /paste [text] - <code>paste the given text on Pasty.</code>
-• /paste [reply] - <code>paste the replied text on Pasty.</code>
 • /genpassword or /genpw <code>20</code>
-• /tgmedia or /tgraph - upload supported media (within 5MB) to telegraph."""
+• /inkick - command with required arguments and i will kick members from group.
+• /instatus - to check current status of chat member from group.
+• /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.
+• /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
+• /dkick - to kick deleted accounts"""
 
 
     GTRANS_TXT = """Help: <b>Google Translator</b>
@@ -277,16 +299,18 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}"""
 
-    ZOMBIES_TXT = """Help: <b>Zombies</b>
+    ZOMBIES_TXT = """Help: <b>File Store</b>
 
-<b>Kick incative members from group. Add me as admin with ban users permission in group.</b>
+<b>You can use the filestore feature for any public channel (only media messages  can be stored). </b>
 
 <b>Commands and Usage:</b>
-• /inkick - command with required arguments and i will kick members from group.
-• /instatus - to check current status of chat member from group.
-• /inkick within_month long_time_ago - to kick users who are offline for more than 6-7 days.
-• /inkick long_time_ago - to kick members who are offline for more than a month and Deleted Accounts.
-• /dkick - to kick deleted accounts."""
+• /link - For a single file use the command as reply to file.
+• /batch - For creating batch files , use /batch <starting message link> <ending message link>.
+Example: /batch https://t.me/MovieClubOfficiall/7 https://t.me/MovieClubOfficiall/10
+
+<b>NOTE:</b>
+• Bot should have admin privillage.
+• Those Users Who Stores 18+ Adult Contents & NSFW Will Be Banned Permanently."""
 
     CREATOR_REQUIRED = """❗You have to be the group creator to do that."""
       
