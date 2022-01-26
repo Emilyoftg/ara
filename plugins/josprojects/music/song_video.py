@@ -80,7 +80,7 @@ def a(client, message: Message):
             return
     except Exception as e:
         m.edit(
-            "**Enter Song Name with Command**❗\nFor Example: `/song Alone Marshmellow`"
+            "**Enter Song Name with Command** ⚠️\nFor Example: `/song Alone Marshmellow`"
         )
         print(str(e))
         return
@@ -90,7 +90,7 @@ def a(client, message: Message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f'🏷 <b>Title:</b> <a href="{link}">{title}</a>\n\n<b>© Powered by @MovieClubOfficial</b>'
+        rep = f'🏷 <b>Title:</b> <a href="{link}">{title}</a>\n\n<b>© Powered by @MovieClubOfficiall</b>'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -254,7 +254,7 @@ async def vsong(client, message: Message):
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
 
     pablo = await client.send_message(
-        message.chat.id, f"**🔎 Searching..** `{urlissed}`", reply_to_message_id=reply_id
+        message.chat.id, f"**🔎 Searching..`{urlissed}` On YouTube ⚡️**", reply_to_message_id=reply_id
     )
     if not urlissed:
         await pablo.edit("Invalid Command Syntax Please Check help Menu To Know More!")
@@ -294,7 +294,7 @@ async def vsong(client, message: Message):
     capy = f"""
 **🏷️ Video :** [{thum}]({mo})
 
-<b>© Powered by @MovieClubOfficial</b>
+<b>© Powered by @MovieClubOfficiall</b>
 """
     await client.send_video(
         message.chat.id, reply_to_message_id=reply_id,
