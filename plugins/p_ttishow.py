@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('Updates', url='https://t.me/MCMovieBot)
+            InlineKeyboardButton('Updates', url='https://t.me/MCMovieBot)'
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -56,8 +56,8 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply_text(
-                text=f"<b>Hey , {u.mention}, Welcome to {message.chat.title}\n\n© Powered by @MovieClubOfficiall</b>",
+                temp.MELCOW['welcome'] = await message.reply_photo(photo="https://telegra.ph/file/c5f1489cc706063baf6d4.jpg"
+                caption=f"<b>Hey , {u.mention}, Welcome to {message.chat.title}\n\n© Powered by @MovieClubOfficiall</b>",
                 disable_web_page_preview = True,
                 reply_markup=InlineKeyboardMarkup(buttons))
 
