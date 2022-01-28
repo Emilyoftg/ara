@@ -6,7 +6,9 @@ from database.users_chats_db import db
 from database.ia_filterdb import Media
 from utils import get_size, temp, get_settings
 from script import Script
+from info import PICS
 from pyrogram.errors import ChatAdminRequired
+import random
 
 """-----------------------------------------https://t.me/JosProjects --------------------------------------"""
 
@@ -41,7 +43,7 @@ async def save_group(bot, message):
             InlineKeyboardButton('Updates', url='https://t.me/MCMovieBot')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
-        await message.reply_photo(photo="https://telegra.ph/file/14af383f7c4aa2915c8c5.jpg",
+        await message.reply_photo(photo=random.choice(PICS),
             caption=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
     else:
